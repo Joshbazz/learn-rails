@@ -11,22 +11,31 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+
+#compass-rails works now, needed foundation (apparently??)
+gem 'compass-rails'
+#figaro works
+gem 'figaro'
+#gibbon works
+gem 'gibbon'
+#google_drive works
+gem 'google_drive'
+#high voltage works
+gem 'high_voltage', '~> 3.0.0'
+#simle form works
+gem 'simple_form'
+#foundation now works, old gem had different name
+gem 'foundation-rails'
+#group works
+group :development do
+  gem 'rails_layout'
+  gem 'better_errors'
+end 
+
 gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'figaro'
-gem 'gibbon'
-gem 'google_drive'
-gem 'high_voltage', '~> 3.0.0'
-gem 'simple_form'
-gem 'foundation-rails'
-gem 'compass-rails'
-group :development do
-gem 'better_errors'
-gem 'rails_layout'
-end
-
-
 group :development, :test do
+  
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -44,3 +53,4 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+end
